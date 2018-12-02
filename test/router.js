@@ -1,12 +1,10 @@
 const xt = require('../src/index');
 const app = xt();
+console.log(app)
 app.get('/',function(req,res,next){
     res.end('hello');
     next()
-},function(req,res,next){
-    res.end('hello');
-    next()
-}).get('/',function(req,res,next){
+});app.get('/',function(req,res,next){
     console.log(3)
     next()
 });
