@@ -1,4 +1,4 @@
-const xt = require('../src/application');
+const xt = require('../src/index');
 const app = xt();
 app.get('/',function(req,res,next){
     res.end('hello');
